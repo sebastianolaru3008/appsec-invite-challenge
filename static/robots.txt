@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+I hid this from the chatbots so chatgpt cannot break it. =))
+Use this and the your javascript skills to find the flag.
+
+Encrypted flag: @@Im6o[R{UgNWesJPsLLV;DWQM4P[k[NmGNLE<oMvMJJDlgIHQZLF;4O
