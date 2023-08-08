@@ -24,6 +24,8 @@ COPY --from=build /usr/src/app/dist ./dist
 
 COPY --from=build /usr/src/app/client ./client
 
+COPY package*.json ./
+
 RUN yarn install --production=true
 
 RUN rm package*.json
