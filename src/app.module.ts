@@ -9,7 +9,7 @@ import { AppService } from './app.service';
   imports: [
     HttpModule,
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'static'),
+      rootPath: join(__dirname, '..', 'client'),
       exclude: ['/api/(.*)', '/db/(.*)'],
     }),
   ],
