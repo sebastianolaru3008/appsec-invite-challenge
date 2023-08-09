@@ -1,4 +1,4 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
@@ -11,5 +11,10 @@ export class AppController {
     @Body('flag') flag: string,
   ): Promise<any> {
     return await this.appService.getInvite(slack_user_tag, flag);
+  }
+
+  @Get('/api/solves/')
+  getSolves(): any {
+    return this.appService.getSolves();
   }
 }

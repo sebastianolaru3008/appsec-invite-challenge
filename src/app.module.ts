@@ -6,10 +6,13 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [HttpModule,ServeStaticModule.forRoot({
+  imports: [
+    HttpModule,
+    ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'static'),
-      exclude: ['/api/(.*)'],
-    }),],
+      exclude: ['/api/(.*)', '/db/(.*)'],
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

@@ -1,58 +1,10 @@
 <!DOCTYPE html>
-<!-- 
-       ___________________
-     ,'                   `.
-    /  I tried to get my    \
-   |  mouse to pose with the |
-   | Swiss cheese, but teens |
-   |   are so rebellious...  |
-   |  Go look in his *head*  |
-    \   to see the photo    /
-     `._______   _________,'                      _
-             / ,'                              ,-'/|
- _    _     /,'                            ,,-' _.'|
-( )__( )   /'                          _.-'    (_ )|
- ( o o)                              -'. _      .'_|
-  (=*=)                              |  (_)_    |(_
-  _)"(_          (\.-./)             |      `-.<   |
- / .'. \          {`*`}              | o      _|   |
- ||' '|\\         .`U'.               )      (_    /
- ||'.'| \\   )   /|. .|\  _          |    (_)  |  .'
- ||   |\ \\ (    \(___)/ ( `         |_        |  |
- ((.'.)\\ E[_]    | : |-._)            :     .-.  /
-  || || ))        |_|_|              .'     : ( :|
-  || ||((         _|||_               `._    `-. .
-  (| |) \\       (__|__)                 `-.   |.'
-  || ||  \\                                 `-.(
- _|| ||_  ))
-(__) (__)
- -->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Invite me!</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <!-- 
-            .--,       .--,
-           ( (  \.---./  ) )
-            '.__/o   o\__.'
-               {=  ^  =}
-                >  -  <
- ___________.""`-------`"".____________
-/  o                            O      \
-\                      o               /
-/  .    O                          o   \
-\                                      /         __
-/                                      \     _.-'  `.
-\______________o__________o____________/ .-~^        `~--'
-              ___)( )(___        `-.___.'
-             (((__) (__)))
-
-Do you smell anythig funny?! It is either the Network or the Cheese.
-Go find the cheese_trail and get the flag!
-     -->
 </head>
 
 <body>
@@ -98,40 +50,19 @@ Go find the cheese_trail and get the flag!
 
         <div class="container">
             <div class="content">
-                <h2>Get your invite into AppSec</h2>
-                <p>Enter the flag and your slack user tag to get your invite</p>
-                <i>If don't know where to look for the the flag just <b>inspect</b> closer the <b>elements</b> of the
-                    website</i>
-                <form class="form">
-                    <div class="success-msg">
-                        <i class="fa fa-check"></i>
-                        Hack ya! Congrats, you will be invited to the slack channel
-                    </div>
-                    <div class="error-msg">
-                        <i class="fa fa-times-circle"></i>
-                        This is not the correct flag, please try again
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="slack_user_tag" id="slack_user_tag" placeholder="@john.doe"><i>Slack
-                            User Tag</i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="flag" id="flag" placeholder="RDCTF{*}"><i>Flag</i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" value="Generate Invite">
-                    </div>
-                </form>
-                <a href="/solves.html">
-                    <p>See who already got the invite ></p>
-                </a>
+                <div class="solves-header">
+                    <a href="/"><i class="fa fa-arrow-left"></i></a>
+                    <div style="margin-right: 150px;"><h2>Solves</h2></div>
+                    
+                </div>
+                <div class="solves">
+                </div>
             </div>
         </div>
         </div>
     </section>
 
-    <script src="js/index.js"></script>
-    <script src="js/cheese_trail.js"></script>
+    <script src="js/solves.js" defer></script>
 </body>
 
 </html>

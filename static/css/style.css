@@ -106,6 +106,17 @@ section .container .content
   flex-direction: column;
   gap: 40px;
 }
+
+section .container .content .solves-header {
+    display:flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center;
+}
+section .container .content .solves-header i{
+    font-size: 32px;
+}
+
 section .container .content h2 
 {
   font-size: 2em;
@@ -118,6 +129,11 @@ section .container .content p
   font-size: 1.25em;
   color: #fff;
   line-height: 1.5em;
+}
+
+section .container .content a
+{
+    text-decoration: none;
 }
 
 section .container .content i {
